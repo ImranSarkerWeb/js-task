@@ -20,7 +20,7 @@
     <div class="grid grid-cols-3 w-3/4 mx-auto gap-4 text-white my-4 font-semibold">
         <div class=" bg-emerald-300 p-6 text-4xl rounded-xl">
             <h2 class="mb-4">Deposit:</h2>
-            <h2>$00</h2>
+            <h2>$ <span id="show-deposit">00</span></h2>
         </div>
         <div class=" bg-violet-500 p-6 text-4xl rounded-xl">
             <h2 class="mb-4">Withdraw:</h2>
@@ -28,7 +28,7 @@
         </div>
         <div class=" bg-amber-300 p-6 text-4xl rounded-xl">
             <h2 class="mb-4">Balance:</h2>
-            <h2>$1240</h2>
+            <h2>$ <span id="balance">1240</span></h2>
         </div>
     </div>
 
@@ -38,13 +38,13 @@
             <h2 class="mb-10 font-semibold text-4xl">Please Deposit:</h2>
 
 
-            <input type="number" placeholder="$ amount you want to deposit" class="w-[90%] rounded-md h-8 text-xl mt-5 text-black px-3 py-5">
+            <input id="deposit-field" type="number" placeholder="$ amount you want to deposit" class="w-[90%] rounded-md h-8 text-xl mt-5 text-black px-3 py-5">
 
-            <button class=" my-6 font-semibold bg-green-800 py-2 px-5 rounded-lg text-white hover:text-yellow-600">Deposit</button>
+            <button id="deposit" class=" my-6 font-semibold bg-green-800 py-2 px-5 rounded-lg text-white hover:text-yellow-600">Deposit</button>
             
         </div>
         <div class=" bg-red-400 p-6  rounded-xl">
-            <h2 class="mb-10 font-semibold text-4xl">Please Deposit:</h2>
+            <h2 class="mb-10 font-semibold text-4xl">Please Withdraw:</h2>
 
 
             <input type="number" placeholder="$ amount you want to withdraw" class="w-[90%] rounded-md h-8 text-xl mt-5 text-black px-3 py-5">
@@ -57,7 +57,7 @@
 
 
 
-    <script src="logout.js"></script>
+    <script src="bankCalc.js"></script>
 </body>
 
 </html>
