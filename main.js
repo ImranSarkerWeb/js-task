@@ -4,7 +4,7 @@ const myBankLink = document.getElementById("myBankLink")
 //go to my bank using js
 
 myBankLink.addEventListener('click', function(){
-    window.location.href = 'simpleBank.html'
+    window.location.href = 'index.html'
 })
 
 const plus =document.getElementById('plus')
