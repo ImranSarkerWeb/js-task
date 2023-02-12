@@ -12,7 +12,11 @@ submit.addEventListener('click', function(){
         location.replace("bank.html")
     }
     else{
-        alert("you are not valid user")
+        email.style.border='2px solid red'
+        email.style.backgroundColor='lightpink'
+        password.style.border='2px solid red'
+        password.style.backgroundColor='lightpink'
+        // alert("you are not valid user")
     }
    
 })

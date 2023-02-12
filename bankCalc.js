@@ -31,12 +31,14 @@ document.getElementById('deposit').addEventListener('click', function () {
         const previousBalance = parseFloat(balanceDisplay.innerText)
         balanceDisplay.innerText = previousBalance + newDepositAmount;
 
-        //border style reset
+        // reset
         depositField.style.border = ''
+        depositField.style.backgroundColor = ''
         depositField.value = ''
     } else {
         // alert('Please input first')
         depositField.style.border = '2px solid red'
+        depositField.style.backgroundColor = 'lightpink'
     }
 
 
