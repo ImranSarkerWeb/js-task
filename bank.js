@@ -8,7 +8,7 @@ submit.addEventListener('click', function(){
     let userEmail = email.value;
     let userPassword = password.value;
 
-    if(userEmail =="imransarker.web@gmail.com" && userPassword =='imran'){
+    if(userEmail =="example@xyz.com" && userPassword =='12345'){
         location.replace("bank.html")
     }
     else{
