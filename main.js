@@ -39,11 +39,28 @@ function createTask(task){
 
 }
 
-addItemButton.addEventListener('click', function(){
-    newtask.value ? todoUl.appendChild(createTask(newtask)):alert('please type your work!')
-    newtask.value = ""
-})
 
+
+let todoComplete = function(listItem, clickCheckbox){
+    let checkbox = listItem.querySelector('input[type="checkbox"]')
+    
+}
+// addItemButton.addEventListener('click', function(){
+//     newtask.value ? todoUl.appendChild(createTask(newtask)):alert('please type your work!')
+//     newtask.value = ""
+// })
+
+
+
+function completeTask (){
+    let listItem = this.parentNode;
+    // <button class="btn btn-danger ms-5">Delete</button>
+    let deleteBtn = document.createElement('button')
+    deleteBtn.innerText = 'Delete'
+    listItem.removeChild('input')
+    listItem.appendChild(deleteBtn);
+    completeUL.appendChild(listItem)
+}
 
 
 //below event will add something my todo list
