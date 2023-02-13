@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 3</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+<main>
+    <section class="w-[80%] bg-green-300 mt-11 mx-auto">
+        
+        <div class="p-10">
+            <div class="text-center text-2xl">My Text Editor</div>
+            <div class="flex justify-between border-b-4">
+                <div class="font-bold pt-5 flex space-x-5">
+                    <button id="bold" class="hover:bg-green-400 px-2">B</button>
+                    <button id="italic" class="hover:bg-green-400 px-2"><span class="italic">I</span></button>
+                    <button id="underline" class="hover:bg-green-400 px-2"><span class="underline">U</span></button>
+                </div>
+               <div class="font-bold py-5 flex space-x-5">
+                    <button id="left" class="hover:bg-green-400 px-2">left</button>
+                    <button id="center" class="hover:bg-green-400 px-2"><span class="italic">Center</span></button>
+                    <button id="right" class="hover:bg-green-400 px-2"><span class="">Right</span></button>
+                    <button id="justify" class="hover:bg-green-400 px-2"><span class="">Justify</span></button>
+                </div>
+                 
+                <div class="font-bold py-5 flex space-x-5">
+                    <input type="number" name="fontSize" id="fontSize" value="18" class="w-10">
+                    
+                    <button id="transform" class="hover:bg-green-400 px-2"><span class="italic">aA</span></button>
+                    <input type="color" name="" id="color">
+                </div>
+            </div>
+            <div class="mt-2">
+                <textarea class="w-[100%] p-5" name="textField" id="textField" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="js/challenge3.js"></script>
+</body>
+</html>
