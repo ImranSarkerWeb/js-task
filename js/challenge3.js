@@ -1,5 +1,5 @@
 const getTextField = document.getElementById('textField')
-getTextField.value = 'value="This Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, inventore? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, inventore? is some defaul value"'
+/* getTextField.value = 'value="This Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, inventore? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, inventore? is some defaul value"' */
 const boldBtn = document.getElementById('bold')
 const italicBtn = document.getElementById('italic')
 const underlineBtn = document.getElementById('underline')
@@ -104,6 +104,14 @@ justifyBtn.addEventListener('click', function () {
 })
 
 //fontsize, transform, color change
+fontSizeField.addEventListener('click', function(){
+    getTextField.style.fontSize = fontSizeField.value +'px';
+})
+fontSizeField.addEventListener('keyup', function(event){
+    getTextField.style.fontSize = fontSizeField.value +'px';
+    }
+)
+
 
 transfromBtn.addEventListener('click', function(){
     if(!cleckdeTransformBtn){
@@ -116,4 +124,14 @@ transfromBtn.addEventListener('click', function(){
         cleckdeTransformBtn = false;
     }
     
+})
+
+
+colorField.addEventListener('input', function(){
+    getTextField.style.color = this.value;
+})
+
+const redirectBtn = document.getElementById('go2nd')
+redirectBtn.addEventListener('click', function(){
+    location.replace('challenge02.html')
 })
