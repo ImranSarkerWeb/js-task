@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 02</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <main>
+        <section class="w-[95%] mt-14 mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div class="bg-red-300 p-10 font-semibold text-lg rounded-lg md:ml-64">
+
+                    <h1>Price: $<span id="1stPrice">1000</span></h1>
+
+                    <button class="bg-rose-500 py-3 px-5 rounded-lg my-4" id="1stBtn">
+                        Apply
+
+                    </button>
+                    <p>Please Pay: $
+                        <span id="1stOption">
+
+                        </span>
+                    </p>
+                </div>
+                <div class="bg-fuchsia-500 p-10 font-semibold text-lg rounded-lg md:mr-64">
+                    <h1>Price: $<span id="2ndPrice">1000</span></h1>
+                    <label for="coupon">Coupon</label>
+                    <input type="text" class="rounded-md my-4" id="coupon" name="coupon">
+                    <button id="2ndBtn" class="bg-amber-700 py-3 px-5 rounded-lg my-4 block">Apply</button>
+                    <p> Please Pay: $ <span id="2ndOption"></span></p>
+                </div>
+            </div>
+        </section>
+
+      <div class="w-[80%]   text-center mt-11 mx-auto" >  <button id="go3rd" class="bg-green-700 py-3 px-5 rounded-lg my-4 block hover:bg-gray-700 hover:text-white">Go to Third Challenge</button></div>
+    </main>
+
+    <script src="js/challeng2.js"></script>
+</body>
+
+</html>
