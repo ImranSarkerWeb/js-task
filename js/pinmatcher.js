@@ -69,14 +69,41 @@ document.getElementById('calulator').addEventListener('click', function (event) 
 document.getElementById('generator').addEventListener('click', function () {
 
     setValueInputFieldById('pin-field', getPin())
+    document.getElementById('tryCount').innerText = '3'
+    document.getElementById('check-match').removeAttribute('disabled')
+    document.getElementById('check-match').style.color = 'white'
 })
 
 
 document.getElementById('check-match').addEventListener('click', function () {
     const generatedPin = getVauleFromInputFieldById('pin-field')
     const confirmPin = getVauleFromInputFieldById('pin-confirm-field')
+    const notMatchedField = document.getElementById('notMatched')
+    const matchedField = document.getElementById('matched')
     if (generatedPin === confirmPin) {
-      
+      matchedField.style.display = 'block'
+      notMatchedField.style.display = 'none'
+    }else{
+        matchedField.style.display = 'none'
+        notMatchedField.style.display = 'block'
+        tryCount()
     }
 
+
+
 })
+
+//number of try
+
+function tryCount(){
+    const tryCountElement =document.getElementById('tryCount')
+    let countNumber = parseInt(tryCountElement.innerText)
+    countNumber = countNumber -1
+    if(countNumber < 0){
+        document.getElementById('check-match').setAttribute('disabled', true)
+        document.getElementById('check-match').style.color = 'red'
+    }else{
+        tryCountElement.innerText = countNumber
+    }
+}
+
