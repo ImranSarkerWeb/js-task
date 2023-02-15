@@ -47,7 +47,7 @@ document.getElementById('calulator').addEventListener('click', function (event) 
     } else {
         if (number === 'C') {
             setValueInputFieldById('pin-confirm-field', '');
-            
+
         } else if (number === '<') {
             const allDigits = getVauleFromInputFieldById('pin-confirm-field')
             const allDigisInArry = allDigits.split('')
@@ -75,8 +75,8 @@ document.getElementById('generator').addEventListener('click', function () {
 document.getElementById('check-match').addEventListener('click', function () {
     const generatedPin = getVauleFromInputFieldById('pin-field')
     const confirmPin = getVauleFromInputFieldById('pin-confirm-field')
-    if (generatedPin == confirmPin) {
-        alert('yess')
+    if (generatedPin === confirmPin) {
+      
     }
 
 })
